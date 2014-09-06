@@ -12,6 +12,7 @@
 		2714589219BACBCD008985A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2714589019BACBCD008985A6 /* Main.storyboard */; };
 		2714589419BACBCD008985A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714589319BACBCD008985A6 /* Images.xcassets */; };
 		271458A019BACBCD008985A6 /* Project1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714589F19BACBCD008985A6 /* Project1Tests.swift */; };
+		73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		2714589919BACBCD008985A6 /* Project1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2714589E19BACBCD008985A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2714589F19BACBCD008985A6 /* Project1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1Tests.swift; sourceTree = "<group>"; };
+		73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2714588C19BACBCD008985A6 /* AppDelegate.swift */,
+				73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */,
 				2714588E19BACBCD008985A6 /* ViewController.swift */,
 				2714589019BACBCD008985A6 /* Main.storyboard */,
 				2714589319BACBCD008985A6 /* Images.xcassets */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2714588F19BACBCD008985A6 /* ViewController.swift in Sources */,
+				73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */,
 				2714588D19BACBCD008985A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +401,7 @@
 				271458A519BACBCD008985A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		271458A619BACBCD008985A6 /* Build configuration list for PBXNativeTarget "Project1Tests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				271458A819BACBCD008985A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
