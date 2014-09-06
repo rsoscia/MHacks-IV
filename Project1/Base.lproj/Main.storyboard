@@ -17,31 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-BE-xRg">
-                                <rect key="frame" x="116" y="60" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-BE-xRg">
+                                <rect key="frame" x="16" y="40" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0nz-65-hV3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-GU-onJ">
-                                <rect key="frame" x="424" y="60" width="60" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="xth-Wf-2J8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-GU-onJ">
+                                <rect key="frame" x="270" y="99" width="60" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqb-h3-m82"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="x5h-GU-onJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="H85-tE-pND"/>
-                            <constraint firstItem="x5h-GU-onJ" firstAttribute="leading" secondItem="rDU-BE-xRg" secondAttribute="trailing" constant="20" id="KoN-cU-nPs"/>
-                            <constraint firstItem="rDU-BE-xRg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Lby-71-yAk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="x5h-GU-onJ" secondAttribute="trailing" constant="100" id="UOD-Au-5LR"/>
-                            <constraint firstItem="rDU-BE-xRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="dgs-TL-j3q"/>
-                            <constraint firstItem="x5h-GU-onJ" firstAttribute="leading" secondItem="rDU-BE-xRg" secondAttribute="trailing" constant="20" id="eVe-fF-Ynn"/>
+                            <constraint firstItem="rDU-BE-xRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="VI9-Ri-ntr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rDU-BE-xRg" secondAttribute="trailing" id="a4h-Kf-v3g"/>
+                            <constraint firstAttribute="centerX" secondItem="x5h-GU-onJ" secondAttribute="centerX" id="cEa-Ev-xzw"/>
+                            <constraint firstItem="rDU-BE-xRg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rZz-V3-d2Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="offenderName" destination="rDU-BE-xRg" id="wKi-Lj-8ou"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
