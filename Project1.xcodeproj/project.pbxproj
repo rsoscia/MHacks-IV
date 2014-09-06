@@ -15,6 +15,7 @@
 		27D4AC6D19BB08C30049BE54 /* SubmitNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D4AC6C19BB08C30049BE54 /* SubmitNameViewController.swift */; };
 		27D4AC6F19BB0A3D0049BE54 /* VictimListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D4AC6E19BB0A3D0049BE54 /* VictimListViewController.swift */; };
 		73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */; };
+		B944969E19BB280B00EF8D8E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B944969D19BB280B00EF8D8E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		27D4AC6C19BB08C30049BE54 /* SubmitNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitNameViewController.swift; sourceTree = "<group>"; };
 		27D4AC6E19BB0A3D0049BE54 /* VictimListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictimListViewController.swift; sourceTree = "<group>"; };
 		73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B944969C19BB27D400EF8D8E /* Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-header.h"; sourceTree = SOURCE_ROOT; };
+		B944969D19BB280B00EF8D8E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B944969E19BB280B00EF8D8E /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 		2714587E19BACBCD008985A6 = {
 			isa = PBXGroup;
 			children = (
+				B944969D19BB280B00EF8D8E /* libsqlite3.dylib */,
 				2714588919BACBCD008985A6 /* Project1 */,
 				2714589C19BACBCD008985A6 /* Project1Tests */,
 				2714588819BACBCD008985A6 /* Products */,
@@ -87,6 +92,7 @@
 				2714589019BACBCD008985A6 /* Main.storyboard */,
 				2714589319BACBCD008985A6 /* Images.xcassets */,
 				2714588A19BACBCD008985A6 /* Supporting Files */,
+				B944969C19BB27D400EF8D8E /* Bridging-header.h */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-header.h";
 			};
 			name = Debug;
 		};
@@ -353,6 +360,7 @@
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-header.h";
 			};
 			name = Release;
 		};
