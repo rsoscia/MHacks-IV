@@ -14,6 +14,7 @@
 		271458A019BACBCD008985A6 /* Project1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714589F19BACBCD008985A6 /* Project1Tests.swift */; };
 		27D4AC6D19BB08C30049BE54 /* SubmitNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D4AC6C19BB08C30049BE54 /* SubmitNameViewController.swift */; };
 		27D4AC6F19BB0A3D0049BE54 /* VictimListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D4AC6E19BB0A3D0049BE54 /* VictimListViewController.swift */; };
+		35D5E7AB19BB3F4600220FB0 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5E7AA19BB3F4600220FB0 /* DatabaseManager.swift */; };
 		73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */; };
 		B944969E19BB280B00EF8D8E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B944969D19BB280B00EF8D8E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		2714589F19BACBCD008985A6 /* Project1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1Tests.swift; sourceTree = "<group>"; };
 		27D4AC6C19BB08C30049BE54 /* SubmitNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitNameViewController.swift; sourceTree = "<group>"; };
 		27D4AC6E19BB0A3D0049BE54 /* VictimListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictimListViewController.swift; sourceTree = "<group>"; };
+		35D5E7AA19BB3F4600220FB0 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B944969C19BB27D400EF8D8E /* Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-header.h"; sourceTree = SOURCE_ROOT; };
 		B944969D19BB280B00EF8D8E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				2714588C19BACBCD008985A6 /* AppDelegate.swift */,
+				35D5E7AA19BB3F4600220FB0 /* DatabaseManager.swift */,
 				73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */,
 				2714588E19BACBCD008985A6 /* ViewController.swift */,
 				2714589019BACBCD008985A6 /* Main.storyboard */,
@@ -225,6 +228,7 @@
 			files = (
 				2714588F19BACBCD008985A6 /* ViewController.swift in Sources */,
 				27D4AC6F19BB0A3D0049BE54 /* VictimListViewController.swift in Sources */,
+				35D5E7AB19BB3F4600220FB0 /* DatabaseManager.swift in Sources */,
 				73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */,
 				2714588D19BACBCD008985A6 /* AppDelegate.swift in Sources */,
 				27D4AC6D19BB08C30049BE54 /* SubmitNameViewController.swift in Sources */,
