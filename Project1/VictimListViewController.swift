@@ -21,7 +21,11 @@ class VictimListViewController : UIViewController {
         
         // Set Title to offenderName
         if let name = TitleName {
-            offenderNameTitleField.text! = name
+            NSLog("Here %s", name)
+            if offenderNameTitleField != nil {
+            offenderNameTitleField.text = name
+            NSLog("Here")
+            }
         }
     }
 }
