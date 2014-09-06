@@ -17,10 +17,11 @@ class SubmitNameViewController : UIViewController {
     // Outlet for text field
     @IBOutlet weak var offenderNameField: UITextField!
     
-    // Delegate for submitted name
+    // Action for touch-up on submitName button
     @IBAction func submitName(sender: AnyObject) {
         if let name = offenderNameField.text {
             if !name.isEmpty {
+                // If a name has been typed in the text box, segue to the victim list scene
                 offenderName = offenderNameField.text!
                 self.performSegueWithIdentifier("SubmitNameSegue", sender: self)
             }

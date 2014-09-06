@@ -9,5 +9,6 @@
 #ifndef Project1_Bridging_header_h
 #define Project1_Bridging_header_h
 #import <sqlite3.h>
+#import <Parse/Parse.h>
 
 #endif
