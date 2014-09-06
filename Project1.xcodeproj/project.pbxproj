@@ -399,9 +399,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Kyle/Downloads/parse-library-1",
-					"$(PROJECT_DIR)/Parse",
-					Frameworks,
+					"$(PROJECT_DIR)/ParseFrameworks",
 				);
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -417,9 +415,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Kyle/Downloads/parse-library-1",
-					"$(PROJECT_DIR)/Parse",
-					Frameworks,
+					"$(PROJECT_DIR)/ParseFrameworks",
 				);
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
