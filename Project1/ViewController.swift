@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         if let name = offenderName.text {
             if !name.isEmpty {
                 offenderName.text! = "Received name \(name)."
-                
+                self.performSegueWithIdentifier("SubmitNameSegue", sender: self)
             }
         }
     }
