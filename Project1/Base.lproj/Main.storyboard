@@ -63,7 +63,7 @@
                     <navigationItem key="navigationItem" id="arx-BX-mG3"/>
                     <connections>
                         <outlet property="offenderNameField" destination="rDU-BE-xRg" id="Crm-w6-Mty"/>
-                        <segue destination="v40-0A-Q7G" kind="presentation" identifier="SubmitNameSegue" id="svj-QV-KZh"/>
+                        <segue destination="v40-0A-Q7G" kind="presentation" identifier="SubmitNameSegue" modalTransitionStyle="coverVertical" id="svj-QV-KZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,7 +121,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Rqw-Am-34c" secondAttribute="trailing" id="zwv-NM-cgc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DmV-K0-fXi"/>
+                    <navigationItem key="navigationItem" id="DmV-K0-fXi">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ePa-MM-3eh">
+                            <connections>
+                                <segue destination="KXu-q2-1WW" kind="presentation" modalTransitionStyle="crossDissolve" id="fzQ-Db-4cs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="offenderNameTitleField" destination="NnP-Nb-wzP" id="g8S-mf-jxb"/>
                     </connections>
