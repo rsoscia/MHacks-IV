@@ -13,7 +13,7 @@ import UIKit
 class VictimListViewController : UIViewController {
     var TitleName: String?
     
-    @IBOutlet weak var offenderNameTitleField: UITextField!
+    @IBOutlet weak var offenderNameTitleField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,7 @@ class VictimListViewController : UIViewController {
         
         // Set Title to offenderName
         if let name = TitleName {
-            NSLog("Here %s", name)
-            if offenderNameTitleField != nil {
             offenderNameTitleField.text = name
-            NSLog("Here")
-            }
         }
     }
 }
