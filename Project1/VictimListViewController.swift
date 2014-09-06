@@ -26,7 +26,7 @@ class VictimListViewController : UIViewController {
         
         // Query parse for provided offenderName
         var offender_query = PFQuery(className: "OffenderObject")
-        offender_query.whereKey("name", equalTo: TitleName!)
+        offender_query.whereKey("name", equalTo: TitleName!.lowercaseString)
         offender_query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
@@ -64,7 +64,7 @@ class VictimListViewController : UIViewController {
                     
                     // Add new offender to parse database with count 1
                     var new_offender = PFObject(className: "OffenderObject")
-                    new_offender["name"] = self.TitleName!
+                    new_offender["name"] = self.TitleName!.lowercaseString
                     new_offender["count"] = 1
                     new_offender.saveInBackground()
                 }
