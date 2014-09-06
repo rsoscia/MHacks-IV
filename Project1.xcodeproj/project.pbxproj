@@ -139,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				2714588C19BACBCD008985A6 /* AppDelegate.swift */,
+				35D5E7AA19BB3F4600220FB0 /* DatabaseManager.swift */,
 				73ABA3C919BAFDC30086B4B2 /* TableViewController.swift */,
 				2714588E19BACBCD008985A6 /* ViewController.swift */,
 				2714589019BACBCD008985A6 /* Main.storyboard */,
@@ -277,6 +278,7 @@
 			files = (
 				2714588F19BACBCD008985A6 /* ViewController.swift in Sources */,
 				27D4AC6F19BB0A3D0049BE54 /* VictimListViewController.swift in Sources */,
+				35D5E7AB19BB3F4600220FB0 /* DatabaseManager.swift in Sources */,
 				73ABA3CA19BAFDC30086B4B2 /* TableViewController.swift in Sources */,
 				2714588D19BACBCD008985A6 /* AppDelegate.swift in Sources */,
 				27D4AC6D19BB08C30049BE54 /* SubmitNameViewController.swift in Sources */,
