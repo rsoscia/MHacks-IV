@@ -51,9 +51,9 @@
 		2714589919BACBCD008985A6 /* Project1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2714589E19BACBCD008985A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2714589F19BACBCD008985A6 /* Project1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1Tests.swift; sourceTree = "<group>"; };
-		27B07BD019BBA97900EE0A73 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "Parse Frameworks/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		27B07BD219BBA99300EE0A73 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Parse Frameworks/Parse.framework"; sourceTree = "<group>"; };
-		27B07BD319BBA99300EE0A73 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Parse Frameworks/Bolts.framework"; sourceTree = "<group>"; };
+		27B07BD019BBA97900EE0A73 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = ParseFrameworks/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		27B07BD219BBA99300EE0A73 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ParseFrameworks/Parse.framework; sourceTree = "<group>"; };
+		27B07BD319BBA99300EE0A73 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ParseFrameworks/Bolts.framework; sourceTree = "<group>"; };
 		27D4AC6C19BB08C30049BE54 /* SubmitNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitNameViewController.swift; sourceTree = "<group>"; };
 		27D4AC6E19BB0A3D0049BE54 /* VictimListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictimListViewController.swift; sourceTree = "<group>"; };
 		27E2346419BB8DE0002C02B8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
