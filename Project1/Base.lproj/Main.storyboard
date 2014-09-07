@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KXu-q2-1WW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KXu-q2-1WW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
         <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
@@ -67,6 +67,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="164" y="365" width="73" height="41"/>
+                                </variation>
                                 <connections>
                                     <action selector="SignIn:" destination="xbE-J8-IDc" eventType="touchUpInside" id="ZwN-A9-UFA"/>
                                 </connections>
@@ -214,21 +217,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="179" y="119" width="42" height="21"/>
+                                </variation>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-y6-7qt">
                                 <rect key="frame" x="135" y="173" width="331" height="254"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="35" y="173" width="331" height="254"/>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NnP-Nb-wzP" firstAttribute="leading" secondItem="uSZ-cp-p5b" secondAttribute="leadingMargin" id="EV6-8q-z7U"/>
+                            <constraint firstAttribute="centerX" secondItem="Jm9-y6-7qt" secondAttribute="centerX" id="LJ2-ar-Lv9"/>
                             <constraint firstAttribute="centerX" secondItem="NnP-Nb-wzP" secondAttribute="centerX" id="NNW-Uv-5Ct"/>
                             <constraint firstItem="Jm9-y6-7qt" firstAttribute="top" secondItem="NnP-Nb-wzP" secondAttribute="bottom" constant="20" id="Tyb-gv-kgF"/>
                             <constraint firstAttribute="centerX" secondItem="Jm9-y6-7qt" secondAttribute="centerX" id="Uqx-Df-mdM"/>
+                            <constraint firstItem="Jm9-y6-7qt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uSZ-cp-p5b" secondAttribute="leadingMargin" constant="30" id="WMn-U5-yZQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NnP-Nb-wzP" secondAttribute="trailing" id="ly7-wb-N7Z"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Jm9-y6-7qt" secondAttribute="trailing" constant="30" id="tPf-pL-DQR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DmV-K0-fXi">
