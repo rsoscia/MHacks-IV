@@ -56,8 +56,7 @@ class LoginViewController : UIViewController, UIAlertViewDelegate {
             new_user.signUpInBackgroundWithBlock {
                 (succeeded: Bool!, error: NSError!) -> Void in
                 if error == nil {
-                    self.alert("Sucess", msg: "Signed up for account")
-                    
+                    // Success! Signed Up
                     // Login with new credentials
                     self.loginWithParse(new_user)
                 }
