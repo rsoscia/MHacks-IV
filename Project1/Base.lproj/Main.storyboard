@@ -209,27 +209,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-Am-34c">
-                                <rect key="frame" x="96" y="173" width="408" height="350"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnP-Nb-wzP">
-                                <rect key="frame" x="279" y="144" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnP-Nb-wzP">
+                                <rect key="frame" x="279" y="121" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-y6-7qt">
+                                <rect key="frame" x="135" y="173" width="331" height="254"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rqw-Am-34c" firstAttribute="leading" secondItem="uSZ-cp-p5b" secondAttribute="leadingMargin" id="5EG-oT-py4"/>
-                            <constraint firstAttribute="centerX" secondItem="NnP-Nb-wzP" secondAttribute="centerX" id="CXE-ue-iia"/>
-                            <constraint firstItem="Qhw-VM-ay5" firstAttribute="top" secondItem="Rqw-Am-34c" secondAttribute="bottom" constant="20" id="DtA-2K-ULu"/>
-                            <constraint firstItem="Rqw-Am-34c" firstAttribute="top" secondItem="NnP-Nb-wzP" secondAttribute="bottom" constant="10" id="Mmt-Ip-lzT"/>
-                            <constraint firstItem="NnP-Nb-wzP" firstAttribute="top" secondItem="stK-A0-axt" secondAttribute="bottom" constant="10" id="UOb-Na-EZq"/>
-                            <constraint firstItem="Rqw-Am-34c" firstAttribute="top" secondItem="NnP-Nb-wzP" secondAttribute="bottom" constant="10" id="pQ9-dq-v9U"/>
-                            <constraint firstAttribute="centerX" secondItem="Rqw-Am-34c" secondAttribute="centerX" id="wgy-8C-LvM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rqw-Am-34c" secondAttribute="trailing" id="zwv-NM-cgc"/>
+                            <constraint firstItem="NnP-Nb-wzP" firstAttribute="leading" secondItem="uSZ-cp-p5b" secondAttribute="leadingMargin" id="EV6-8q-z7U"/>
+                            <constraint firstAttribute="centerX" secondItem="NnP-Nb-wzP" secondAttribute="centerX" id="NNW-Uv-5Ct"/>
+                            <constraint firstItem="Jm9-y6-7qt" firstAttribute="top" secondItem="NnP-Nb-wzP" secondAttribute="bottom" constant="20" id="Tyb-gv-kgF"/>
+                            <constraint firstAttribute="centerX" secondItem="Jm9-y6-7qt" secondAttribute="centerX" id="Uqx-Df-mdM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NnP-Nb-wzP" secondAttribute="trailing" id="ly7-wb-N7Z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DmV-K0-fXi">
@@ -241,6 +240,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="offenderNameTitleField" destination="NnP-Nb-wzP" id="g8S-mf-jxb"/>
+                        <outlet property="victimTextArea" destination="Jm9-y6-7qt" id="nDl-0L-yfL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYO-1j-7ba" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,6 +249,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WZg-zf-EpV"/>
+        <segue reference="fzQ-Db-4cs"/>
     </inferredMetricsTieBreakers>
 </document>

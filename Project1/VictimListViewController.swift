@@ -11,9 +11,14 @@ import Foundation
 import UIKit
 
 class VictimListViewController : UIViewController {
+    
     var TitleName: String?
     
+    var victimList = [String]()
+    
     @IBOutlet weak var offenderNameTitleField: UILabel!
+    
+    @IBOutlet weak var victimTextArea: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,9 @@ class VictimListViewController : UIViewController {
         if let name = TitleName {
             offenderNameTitleField.text = name
         }
+        
+        // Retreive username for current user
+        let username = PFUser.currentUser().username!
         
         // Query parse for provided offenderName
         var offender_query = PFQuery(className: "OffenderObject")
@@ -52,7 +60,17 @@ class VictimListViewController : UIViewController {
                                     let updated_offender_count = found_offender_count + 1
                                     offender["count"] = updated_offender_count
                                     self.offenderNameTitleField.text = "\(self.TitleName!): \(updated_offender_count) reported incidents"
-                                        offender.saveInBackground()
+                                    offender.addUniqueObject(username, forKey: "reporters")
+                                    self.victimList = offender["reporters"] as [String]
+                                    
+                                    // Temporary: display reportee usernames in TextView
+                                    var display_str = ""
+                                    for victim in self.victimList {
+                                        display_str += "\(victim)\n"
+                                    }
+                                    self.victimTextArea.text! = display_str
+                                    
+                                    offender.saveInBackground()
                                 }
                             }
                         }
@@ -66,6 +84,7 @@ class VictimListViewController : UIViewController {
                     var new_offender = PFObject(className: "OffenderObject")
                     new_offender["name"] = self.TitleName!.lowercaseString
                     new_offender["count"] = 1
+                    new_offender["reporters"] = [username]
                     new_offender.saveInBackground()
                 }
             } else {
@@ -75,3 +94,14 @@ class VictimListViewController : UIViewController {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
